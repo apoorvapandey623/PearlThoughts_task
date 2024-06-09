@@ -42,7 +42,7 @@ provider "aws" {
 
       container_definitions = jsonencode([{
         name      = "hello-world-container"
-        image     = "your-dockerhub-username/hello-world-nodejs:latest"
+        image     = "268724/hello-world-nodejs:latest"
         essential = true
         portMappings = [{
           containerPort = 3000
