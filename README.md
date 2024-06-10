@@ -1,16 +1,16 @@
 # PearlThoughts_task
 Steps followed to create IaC for a Hello World Node.js app using Terraform and AWS ECS/Fargate, along with a CD pipeline using GitHub Actions.
 
-    Step 1: Set Up the Node.js Application
-        1. Create a simple Node.js application.
-        2. Create an `index.js` file.
-            This is a simple example of how to set up a basic web server. It includes :
+    Step 1: Setting Up the Node.js Application
+        1. Created a simple Node.js application.
+        2. Created an `index.js` file.
+            It includes :
                 Importing the Express module.
                 Creating an instance of an Express application.
                 Defining a port number.
                 Setting up a route to handle GET requests on the root URL and send a "Hello World!" message.
                 Starting the server and listening on the specified port.
-        3. Create a Dockerfile
+        3. Created a Dockerfile
             This Dockerfile sets up a Docker container for a Node.js application by:
                 Using an official Node.js base image.
                 Setting the working directory inside the container.
@@ -19,9 +19,9 @@ Steps followed to create IaC for a Hello World Node.js app using Terraform and A
                 Exposing the application port.
                 Specifying the command to start the application.
     
-    Step 2: Create Terraform Configuration
-        1. Create a new directory for Terraform configurations
-        2. Create a `main.tf` file
+    Step 2: Created Terraform Configuration
+        1. Created a new directory for Terraform configurations
+        2. Created a `main.tf` file
             This Terraform configuration sets up an ECS infrastructure on AWS using Fargate. It includes:
                 An AWS provider configuration for the us-east-1 region.
                 Data sources to fetch the default VPC, subnet, and security group.
@@ -31,7 +31,7 @@ Steps followed to create IaC for a Hello World Node.js app using Terraform and A
                 An ECS service to run the task.
                 Outputs to display the ECS cluster and service names.
     
-    Step 3: Set Up GitHub Actions
+    Step 3: Setting Up GitHub Actions
         1. Create a `.github/workflows` directory
         2. Create a `deploy.yml` file
             This GitHub Actions workflow automates the process of deploying a Node.js application to AWS ECS. It includes steps to:
